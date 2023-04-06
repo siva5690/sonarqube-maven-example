@@ -87,12 +87,12 @@
     <repository>
         <id>nexus</id>
         <name>maven-releases</name>
-        <url>http://35.167.240.135:8081/repository/maven-releases/</url> // URL can get it from nexus site
+        <url>http://35.167.240.135:8081/repository/maven-releases/</url> 
     </repository>
     <snapshotRepository>
         <id>nexus</id>
         <name>maven-snapshots</name> 
-        <url>http://35.167.240.135:8081/repository/maven-snapshots/</url> // URL can get it from nexus site
+        <url>http://35.167.240.135:8081/repository/maven-snapshots/</url> 
 
     </snapshotRepository>
 </distributionManagement>
