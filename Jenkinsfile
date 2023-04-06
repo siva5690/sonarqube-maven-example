@@ -23,7 +23,7 @@ pipeline {
 
     stage('Artifact Upload') {
       steps {
-        sh "/usr/local/maven/bin/mvn clean deploy" 
+        sh "/usr/local/maven/bin/mvn clean deploy -s /root/.m2/settings.xml" 
               }
     }
   }
