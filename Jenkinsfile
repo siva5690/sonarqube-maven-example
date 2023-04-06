@@ -2,7 +2,7 @@ pipeline {
   agent any
 
   environment {
-    MAVEN_SETTING = '/root/.m2/settings.xml'
+    MAVEN_SETTING = '/home/ubuntu/.m2/settings.xml'
   }
 
   stages {
