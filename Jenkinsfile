@@ -1,6 +1,9 @@
 pipeline {
   agent any
-
+  
+tools {
+    maven 'Maven 3.8.8'
+  }
   environment {
     MAVEN_SETTING = '/home/ubuntu/.m2/settings.xml'
   }
