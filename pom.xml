@@ -6,7 +6,7 @@
 
     <groupId>com.sonarqube.example</groupId>
     <artifactId>sonarqube-maven-example</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0.SNAPSHOT</version>
 
     <name>Example of basic Maven project to integrate with SonarQube</name>
 
@@ -50,7 +50,7 @@
             <properties>
                 <!-- Optional URL to server. Default value is http://localhost:9000 -->
                 <sonar.host.url>
-                    http://localhost:9000
+                    http://35.167.240.135:9000
                 </sonar.host.url>
             </properties>
         </profile>
@@ -83,5 +83,18 @@
             </build>
         </profile>
     </profiles>
+    <distributionManagement>
+    <repository>
+        <id>nexus</id>
+        <name>maven-releases</name>
+        <url>http://35.167.240.135:8081/repository/maven-releases/</url> // URL can get it from nexus site
+    </repository>
+    <snapshotRepository>
+        <id>nexus</id>
+        <name>maven-snapshots</name> 
+        <url>http://35.167.240.135:8081/repository/maven-snapshots/</url> // URL can get it from nexus site
+
+    </snapshotRepository>
+</distributionManagement>
 
 </project>
