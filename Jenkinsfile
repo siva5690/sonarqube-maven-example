@@ -1,6 +1,10 @@
 pipeline {
   agent any
 
+  environment {
+    MAVEN_SETTING = '/root/.m2/settings.xml'
+  }
+
   stages {
     stage('Checkout') {
       steps {
